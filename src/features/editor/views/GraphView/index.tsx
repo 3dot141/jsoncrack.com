@@ -166,10 +166,6 @@ export const GraphView = ({ isWidget = false }: GraphProps) => {
     setViewPort(viewPort!);
   }, 300);
 
-  if (aboveSupportedLimit) {
-    return <NotSupported />;
-  }
-
   return (
     <>
       <LoadingOverlay visible={loading} />
