@@ -74,13 +74,6 @@ const EditorPage = () => {
   const setVisible = useModal(state => state.setVisible);
 
   useEffect(() => {
-    // const isUpgradeShown = Cookie.get("upgrade_shown");
-    // if (!isUpgradeShown) {
-    setTimeout(() => setVisible("UpgradeModal", true), 1_000);
-    // }
-  }, [setVisible]);
-
-  useEffect(() => {
     if (isReady) checkEditorSession(query?.json);
   }, [checkEditorSession, isReady, query]);
 
