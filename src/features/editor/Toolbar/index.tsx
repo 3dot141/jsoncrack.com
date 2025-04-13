@@ -68,20 +68,6 @@ export const Toolbar = () => {
         <FileMenu />
         <ViewMenu />
         <ToolsMenu />
-        <Button
-          component={Link}
-          href="https://todiagram.com/editor?utm_source=jsoncrack&utm_medium=toolbar"
-          target="_blank"
-          rel="noopener"
-          autoContrast
-          color="green"
-          size="compact-sm"
-          fz="12"
-          fw="600"
-          leftSection={<FaBolt />}
-        >
-          JSON Crack v2.0
-        </Button>
       </Group>
       <Group gap="xs" justify="right" w="100%" style={{ flexWrap: "nowrap" }}>
         <Link href="https://github.com/AykutSarac/jsoncrack.com" rel="noopener" target="_blank">
